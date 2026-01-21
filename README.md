@@ -1,15 +1,31 @@
-This is dark mode button;
-This design is inspire from "Online Tutorials";
-you can check this;
+This is dark mode button;  
+<br>
+<br>
+<br>
+This design is inspire from "Online Tutorials";  
+<br>
+<br>
+<br>
+<br>
+you can check this;  
+<br>
+<br>
+<br>
+<br>
 <img width="500" height="300" alt="image" src="./Image/image.png" />
 <img width="500" height="300" alt="image" src="./Image/image1.png" />
-
+  
 This is hover effect for any inner and outer div and you can also use for your btn.
+<br>
 <img width="500" height="300" alt="image" src="./Image/image2.png" />
-
-
-
-There is all of css style 
+<br>
+<br>
+<br>
+There is all of css style   
+<br>
+<br>
+<br>
+<br>
 *{
     margin: 0;
     padding: 0;
