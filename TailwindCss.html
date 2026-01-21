@@ -5,14 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>button creation</title>
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="NewOne.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+       /* HTML: <div class="infinity"></div> */
+.infinity {
+  --s: 150px; /* control the size */
+  --b: 25px; /* the border thickness */
+  display: inline-flex;
+  gap: calc((sqrt(2) - 1)*var(--s) - sqrt(2)*var(--b));
+}
+.infinity:before,
+.infinity:after {
+  content: "";
+  box-shadow: 0 0 0 var(--b) inset #774F38; /* the color */
+  height: var(--s);
+  aspect-ratio: 1;
+  border-radius: 50% 50% 0 50%;
+  rotate: -45deg;
+}
+.infinity:after {
+  scale: -1;
+}
+    </style>
 </head>
 
-<body>
-    <label for="manik">
+<body class="flex justify-center items-center h-[100vh] w-[100vw] bg-yellow-50 ">
+    <label class="relative h-[140px] w-[260px] bg-green-300 rounded-full content-[mai]" for="manik">
         <input type="checkbox" id="manik">
         <span></span>
     </label>
+    <div class="infinity"></div>
 </body>
 
-</html>
+</html> 

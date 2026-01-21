@@ -1,15 +1,3 @@
-This is dark mode button;
-This design is inspire from "Online Tutorials";
-you can check this;
-<img width="500" height="300" alt="image" src="./Image/image.png" />
-<img width="500" height="300" alt="image" src="./Image/image1.png" />
-
-This is hover effect for any inner and outer div and you can also use for your btn.
-<img width="500" height="300" alt="image" src="./Image/image2.png" />
-
-
-
-There is all of css style 
 *{
     margin: 0;
     padding: 0;
@@ -62,5 +50,50 @@ body{
     }
     100%{
         transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
+.innerDiv{ 
+    background-color: rgb(171, 108, 108);
+    z-index: 4;
+    border-radius: 50px;
+    position: absolute;
+    text-align: center;
+    color: red;
+    inset: 40px;
+    overflow: hidden;
+}
+
+.innerDiv::after{
+    position: absolute;
+    content: " ";
+    background-color: #000000;
+    border-radius: 50px;
+    inset: 9px; 
+
+}
+.innerDiv::before{
+    width: 250px;
+    height: 1000px;
+    content: ' ';
+    position: absolute;
+    background: linear-gradient(90deg,rgba(0, 0, 0, 0) 11%, rgba(0, 255, 85, 1) 44%, rgba(4, 255, 0, 1) 53%, rgba(0, 255, 60, 1) 61%, rgba(0, 0, 0, 0) 93%);
+    top: 50%;
+    left:  50%; 
+    animation: animation2 7s linear infinite; 
+    animation-play-state: paused;
+    
+}
+.innerDiv:hover::before{
+    animation-play-state: running;
+}
+.outerDiv:hover::before{
+    animation-play-state: running;
+}
+@keyframes animation2 {
+    0%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(0deg);
     }
 }
