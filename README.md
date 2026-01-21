@@ -1,16 +1,8 @@
-This is dark mode button;  
-<br>
-<br>
+This is dark mode button;
 <br>
 This design is inspire from "Online Tutorials";  
 <br>
-<br>
-<br>
-<br>
 you can check this;  
-<br>
-<br>
-<br>
 <br>
 <img width="500" height="300" alt="image" src="./Image/image.png" />
 <img width="500" height="300" alt="image" src="./Image/image1.png" />
@@ -19,18 +11,14 @@ This is hover effect for any inner and outer div and you can also use for your b
 <br>
 <img width="500" height="300" alt="image" src="./Image/image2.png" />
 <br>
-<br>
-<br>
 There is all of css style   
-<br>
-<br>
-<br>
 <br>
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+<br>
 body{
     width: 100vw;
     height: 100vh;
@@ -39,6 +27,7 @@ body{
     align-items: center;
     background-color: #000;
 }
+<br>
 
 .outerDiv{
     height: 500px;
@@ -49,6 +38,7 @@ body{
     overflow: hidden;
     border-radius: 50px;
 }
+<br>
 .outerDiv::after{
     position: absolute;
     content: " ";
@@ -58,6 +48,7 @@ body{
     z-index: 3;
 
 }
+<br>
 .outerDiv::before{
     width: 250px;
     height: 1000px;
@@ -72,11 +63,19 @@ body{
 
 }
 
+<br>
 @keyframes animation1 {
+<br>
     0%{
+<br>
         transform: translate(-50%,-50%) rotate(0deg);
+<br>
     }
+<br>
     100%{
+<br>
         transform: translate(-50%,-50%) rotate(360deg);
+<br>
     }
+<br>
 }
