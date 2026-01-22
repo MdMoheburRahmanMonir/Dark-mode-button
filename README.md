@@ -116,3 +116,95 @@ body{
     }
 <br>
 }
+
+<br>
+<h1> This is Mouse Over effect, For this design i was follow "online tutorials"- Youtube chanel </h1>
+<br>
+<img width="500" height="300" alt="image" src="./Image/image3.png" />
+<br>
+<h3> The css file </h3>
+<br>
+.outerDiv{
+<br>
+    display: flex;
+<br>
+    gap: 30px;
+<br>
+}
+<br>
+.innerMain {
+<br>
+    height: 250px;
+<br>
+    width: 200px;
+<br>
+    border-radius: 20px;
+<br>
+    position: relative;
+<br>
+    background-color: rgba(45, 45, 45, 1);
+<br>
+    overflow: hidden;
+<br>
+}
+<br>
+
+.innerMain::before {
+<br>
+    content: " ";
+<br>
+    height: 300px;
+<br>
+    width: 300px; 
+<br>
+    background: radial-gradient(var(--clr), transparent,transparent );
+<br>
+    position: absolute;
+<br>
+    transform: translate(-50%,-50%);
+<br>
+    top: var(--y);  
+<br>
+    left: var(--x);
+<br>
+}
+<br>
+
+.innerMain::after{
+<br>
+    content: " ";
+<br>
+    position: absolute;
+<br>
+    border-radius: 20px;
+<br>
+    inset:  3px;
+<br>
+    z-index: 5;
+<br>
+    background-color: rgba(45, 45, 45, .7); 
+<br>
+}
+<br>
+<br>
+<h3> JS code </h3>
+
+<br>
+let card = document.querySelectorAll('.innerMain');
+<br>
+        card.forEach(card => {
+<br>
+            card.onmousemove = function (e) {
+<br>
+                let x = e.pageX - card.offsetLeft;
+<br>
+                let y = e.pageY - card.offsetTop;
+<br>
+                card.style.setProperty('--x', x + 'px')
+<br>
+                card.style.setProperty('--y', y + 'px')
+<br>
+            }
+<br>
+        })
+<br>
