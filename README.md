@@ -1,13 +1,12 @@
-This is dark mode button;
 <br>
-This design is inspire from "Online Tutorials";  
+<h1>This is dark mode button</h1>
+<h6>This design is inspire from "Online Tutorials"   </h6>
 <br>
-you can check this;  
+<h6>you can check this   </h6> 
 <br>
 <img width="500" height="300" alt="image" src="./Image/image.png" />
-<img width="500" height="300" alt="image" src="./Image/image1.png" />
-  
-This is hover effect for any inner and outer div and you can also use for your btn.
+<img width="500" height="300" alt="image" src="./Image/image1.png" />   
+<h1>This is hover effect for any inner and outer div and you can also use for your btn.</h1> 
 <br>
 <img width="500" height="300" alt="image" src="./Image/image2.png" />
 <br>
@@ -122,7 +121,7 @@ body{
 <br>
 <img width="500" height="300" alt="image" src="./Image/image3.png" />
 <br>
-<h3> The css file </h3>
+<h3> CSS Style </h3>
 <br>
 .outerDiv{
 <br>
